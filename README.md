@@ -40,7 +40,7 @@ Open your terminal and run:
 
 ```bash
 git clone https://github.com/gianluca95/scala-price-basket.git
-cd pricebasket
+cd scala-price-basket
 ```
 
 ### 2. Build the Project
