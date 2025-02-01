@@ -4,12 +4,14 @@ PriceBasket is a Scala-based application that calculates the total price of a ba
 
 ## Features
 
-- **Product Pricing:**  
+- **Product Pricing:**
+
   Calculates the subtotal based on predefined prices:
   - Soup: 65p per tin
   - Bread: 80p per loaf
   - Milk: 130p per bottle
   - Apples: 100p per bag
+ 
 
 - **Special Offers:**  
   - **Apples Discount:** 10% off each bag of apples (i.e., 10p discount per bag).
@@ -65,13 +67,14 @@ You can run the application by providing a list of items as command-line argumen
 sbt "run Soup Soup"
 ```
 
-#### Interactive Behavior
+## Interactive Behavior
 
 - Unknown Products:
 
 If you include any products that are not recognized (i.e., not defined in the product list), the application will print a message such as
 
-```The following items are not recognized: unknownItem1, unknownItem2
+```
+The following items are not recognized: unknownItem1, unknownItem2
 Please check and re-enter the basket if needed.
 ```
 
@@ -79,16 +82,21 @@ Please check and re-enter the basket if needed.
 
 If your basket qualifies for the soup & bread offer (at least 2 soups) but contains no bread, you will see a prompt like:
 
-```Hey, you are missing a discount on bread, would you like to add it to your basket? (Yes/Y to confirm)```
+```
+Hey, you are missing a discount on bread, would you like to add it to your basket? (Yes/Y to confirm)
+```
 
 If you confirm by typing "Yes" or "Y", you will then be asked:
 
-```How many loaves would you like to add?```
+```
+How many loaves would you like to add?
+```
 
 The additional loaves of bread will be added to your basket and the pricing will be recalculated accordingly.
 
 ## Project Structure
 
+```
 pricebasket/
 ├── src/
 │   ├── main/
@@ -99,3 +107,4 @@ pricebasket/
 │           └── PriceBasketSpec.scala  # Unit tests for the pricing logic
 ├── .gitignore   # Git ignore file for build artifacts, IDE settings, etc.
 └── README.md    # This file
+```
