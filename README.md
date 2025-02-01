@@ -67,6 +67,28 @@ You can run the application by providing a list of items as command-line argumen
 sbt "run Soup Soup"
 ```
 
+## Expected Output
+
+When you run the application, the output will include:
+- A **Subtotal** that reflects the total price of all items before discounts.
+- Any **Discounts** that have been applied (e.g., "Apples 10% off" or "Bread 50% off").
+- The **Total Price** after discounts have been subtracted.
+
+### Example 1: Basket with Apples, Milk, and Bread
+
+If you run:
+```
+sbt "run Apples Milk Bread"
+```
+
+You can expect output similar to:
+
+```
+Subtotal: £3.10
+Apples 10% off: 10p
+Total price: £3.00
+```
+
 ## Interactive Behavior
 
 - Unknown Products:
@@ -93,6 +115,26 @@ How many loaves would you like to add?
 ```
 
 The additional loaves of bread will be added to your basket and the pricing will be recalculated accordingly.
+
+So for example, if you run:
+
+```
+sbt "run Soup Soup"
+```
+
+Since there are 2 soups (qualifying for a bread discount) but no bread, the program will prompt:
+
+```
+Hey, you are missing a discount on bread, would you like to add it to your basket? (Yes/Y to confirm)
+```
+
+If you respond with "Yes" (or "Y") and add 1 loaf of bread, the expected output becomes:
+
+```
+Subtotal: £2.10
+Bread 50% off: 40p
+Total price: £1.70
+```
 
 ## Project Structure
 
