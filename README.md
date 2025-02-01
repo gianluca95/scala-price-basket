@@ -74,8 +74,6 @@ When you run the application, the output will include:
 - Any **Discounts** that have been applied (e.g., "Apples 10% off" or "Bread 50% off").
 - The **Total Price** after discounts have been subtracted.
 
-### Example 1: Basket with Apples, Milk, and Bread
-
 If you run:
 ```
 sbt "run Apples Milk Bread"
