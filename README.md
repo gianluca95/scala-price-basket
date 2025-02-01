@@ -39,7 +39,7 @@ Before you begin, ensure that you have the following installed:
 Open your terminal and run:
 
 ```bash
-git clone https://github.com/yourusername/pricebasket.git
+git clone https://github.com/gianluca95/scala-price-basket.git
 cd pricebasket
 ```
 
