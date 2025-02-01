@@ -1,6 +1,6 @@
-# PriceBasket
+# scala-price-basket
 
-PriceBasket is a Scala-based application that calculates the total price of a basket of goods while taking into account special offers. The pricing logic—including discounts for apples and a combined soup & bread offer—is driven by unit tests to ensure correctness through test-driven development.
+scala-price-basket is a Scala-based application that calculates the total price of a basket of goods while taking into account special offers. The pricing logic—including discounts for apples and a combined soup & bread offer—is driven by unit tests to ensure correctness through test-driven development.
 
 ## Features
 
